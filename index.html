@@ -5,7 +5,7 @@
       rel="stylesheet"
       as="style"
       onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40300%3B400%3B500%3B600%3B700&amp;family=Playfair+Display%3Awght%40400%3B500%3B600%3B700"
     />
 
     <title>Samayu - Dharma Coaching Shelter</title>
@@ -14,80 +14,122 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
   <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Epilogue, "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: Inter, sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f4f2f0] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#181311]">
-            <div class="size-4">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-100 px-10 py-4">
+          <div class="flex items-center gap-3 text-gray-900">
+            <div class="w-8 h-8">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H42V17.3333V30.6667H24V44H6V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+                <path d="M24 8L24 40M8 24L40 24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
               </svg>
             </div>
-            <h2 class="text-[#181311] text-lg font-bold leading-tight tracking-[-0.015em]">Samayu</h2>
+            <h2 class="text-gray-900 text-xl font-medium tracking-tight" style="font-family: 'Playfair Display', serif;">Samayu</h2>
           </div>
           <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/">Home</a>
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/blog">Blog</a>
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/services">Services</a>
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/testimonials">Testimonials</a>
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/about">About Me</a>
-              <a class="text-[#181311] text-sm font-medium leading-normal" href="/contact">Contact</a>
+            <div class="flex items-center gap-8">
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/">Home</a>
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/blog">Blog</a>
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/services">Services</a>
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/testimonials">Testimonials</a>
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/about">About Me</a>
+              <a class="text-gray-700 text-sm font-medium hover:text-gray-900 transition-colors" href="/contact">Contact</a>
             </div>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcX51FS27sSliFGnnME9bTkG-J_ss4eXBgYZh3DoYISuGhOAHe14bK9cyrJjRxk6Q12gMLlHO_DQ4D4evAcXr95nzs8VOnQa2HlSmmr2wTt977rXuDRRadOQSQyo7uSudgGo0QM9inHCXxFdE18f3sOkJgjCLInx6AlV195AP7aDms6ogSpLNy76c6xuxOMDlkfj5fe96mMBEuou3PjVWFG2QLdHCww1ExwH8trtgNLnXk489R_lsGF9mVG_3bc_B7147TdCIi");'
-                >
-                  <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Samayu
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">Dharma Coaching Shelter</h2>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#ed6b2a] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
-                    <span class="truncate">Explore</span>
+        
+        <!-- Hero Section -->
+        <section class="flex flex-1 justify-center py-16 px-6">
+          <div class="max-w-6xl w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[600px]">
+              <!-- Content -->
+              <div class="space-y-8">
+                <div class="space-y-6">
+                  <h1 class="text-5xl lg:text-6xl font-light text-gray-900 leading-tight" style="font-family: 'Playfair Display', serif;">
+                    Transform Your Inner Journey
+                  </h1>
+                  <p class="text-xl text-gray-600 leading-relaxed font-light">
+                    Discover profound wisdom and lasting peace through personalized dharma coaching that honors your unique path to enlightenment.
+                  </p>
+                </div>
+                
+                <div class="space-y-4">
+                  <button class="bg-gray-900 text-white px-8 py-3 font-medium text-sm tracking-wide hover:bg-gray-800 transition-all duration-300 border border-gray-900">
+                    Begin Your Journey
                   </button>
+                  <p class="text-sm text-gray-500 font-light">Free consultation available</p>
                 </div>
               </div>
-            </div>
-            <h2 class="text-[#181311] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Transformative Quotes</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZjNj4piZTy9JTN7v2R7erAeIVlLAfyae2yd_dcaVc-qRryU1GQGNq3VVtNggImiLyrAxV87gHoKnXlubueIxHXQL0lAVeQkyJl6aotGwVSZVhC957DwveRroATgWuRtCA9AJYFX0qoQyHMx_E7ZVH4NipckC8wwLHizGLLcWgKHQIFXEjjWCTsXVjSrYapI4DI2HRipARz-xYDWl4ZxSk5dd2Grepc_KnzEd85CNyPzVFRWXwuIOIqHfsa7378jZEwrMkclFg");'
+              
+              <!-- Image -->
+              <div class="relative">
+                <div class="aspect-[4/5] bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+                  <div 
+                    class="absolute inset-0 bg-cover bg-center opacity-90"
+                    style='background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80");'
                   ></div>
-                  <p class="text-[#181311] text-base font-medium leading-normal">"The mind is everything. What you think you become." - Buddha</p>
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJKxo43rxmZ_PV5yLJn8c__waN6FnAQ5mSPbIXv_jYCnevn9Dl6xyvSiQ7KnQnsGoX4pz_qVkYijMfenr8DKW1PQSv4iiOCmosBcQkEud2un29apt7F4vOgC8pLAMS_Pr5QRu7qV307_y68jc8KHvWbW_Rab9kN4IB-EDhYvwXjlr8VRCfxzZTpTQGnaMvI2TJd-N4yh50xn36usT-Zr0ZsJR2FxqpdjC3AkWiXlLGS11JOo1DfCqB_1s1VC6TPlVr_YftMwX4");'
-                  ></div>
-                  <p class="text-[#181311] text-base font-medium leading-normal">"The only way to do great work is to love what you do." - Steve Jobs</p>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVvMbCxXB5Put5JJSerMZj3GbZhex4XC5YCVXVSId8rirAQgYcP83fHhJinJjtKp5uxLJ74oIPh8N08UasXd922LeWkXv2Vv8bdQNTpeZIROO-34bq-wB_-YVEYf05HpcHWtcnxZNs_iBVWucsxUfpGyt1X4p_b3H9A_oplvPwDll7-USrHl67IRuOEtTX6GGvZY-P3zyhqi39ztvDYKyTYKeAlz69OTeLdj50oXBK7fD09wKZB0kTMDlBro49zLrD9cS4aiqC");'
-                  ></div>
-                  <p class="text-[#181311] text-base font-medium leading-normal">"The journey of a thousand miles begins with a single step." - Lao Tzu</p>
-                </div>
+                <!-- Floating elements for visual interest -->
+                <div class="absolute -top-4 -right-4 w-24 h-24 border border-gray-200 bg-white/80 backdrop-blur-sm"></div>
+                <div class="absolute -bottom-4 -left-4 w-16 h-16 border border-gray-200 bg-white/80 backdrop-blur-sm"></div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="py-20 bg-gray-50">
+          <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+              <h2 class="text-3xl font-light text-gray-900 mb-4" style="font-family: 'Playfair Display', serif;">
+                Guiding Principles
+              </h2>
+              <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Ancient wisdom meets modern understanding in a practice rooted in compassion, mindfulness, and authentic self-discovery.
+              </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div class="text-center space-y-4">
+                <div class="w-12 h-12 mx-auto border border-gray-300 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-medium text-gray-900">Mindful Awareness</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  "The mind is everything. What you think you become." - Buddha
+                </p>
+              </div>
+              
+              <div class="text-center space-y-4">
+                <div class="w-12 h-12 mx-auto border border-gray-300 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-medium text-gray-900">Compassionate Purpose</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  "The only way to do great work is to love what you do." - Steve Jobs
+                </p>
+              </div>
+              
+              <div class="text-center space-y-4">
+                <div class="w-12 h-12 mx-auto border border-gray-300 flex items-center justify-center">
+                  <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-medium text-gray-900">Authentic Journey</h3>
+                <p class="text-gray-600 leading-relaxed">
+                  "The journey of a thousand miles begins with a single step." - Lao Tzu
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
             <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
@@ -102,7 +144,7 @@
               <div class="flex items-center justify-center gap-4 py-2">
                 <a href="#" class="text-[#827168] hover:text-[#181311] transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
-                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0-16h24v63.63a88,88,0,1,1,16,0Z"></path>
                   </svg>
                 </a>
                 <a href="#" class="text-[#827168] hover:text-[#181311] transition-colors">
